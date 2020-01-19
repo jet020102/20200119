@@ -1,0 +1,278 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wrap{
+	width: 900px;
+	margin:0 auto;
+	background-color: brown;
+}
+.header{
+	height: 30px;
+	background-color: #f4f4f3;
+}
+.header img{
+	height: 100%;
+}
+.headermenu{
+	float: right;
+}
+.headermenu li{
+	float: left;
+	margin-right: 5px;
+}
+.headermenu a{
+	display: block;
+	text-decoration: none;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.headermenu .h1{
+	color: #3b5396;
+}
+.headermenu .h2{
+	color: #0db38c;
+}
+.top{
+	height: 60px;
+	margin-bottom: 1px;
+}
+.top img{
+	height: 100%
+}
+.top h1 a{
+	display: block;
+	background-image: url(../img/003.jpg);
+	background-size: contain;
+	height: 60px;
+	width: 90px;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.logo{
+	float: left;
+}
+.topmenu{
+	float: right;
+	height: 60px;
+}
+.topmenu ul{
+	position: absolute;
+	z-index: 10;
+	display: none;
+	background-color: brown;
+}	
+.topmenu > li{
+	float: left;
+}
+.topmenu > li:hover ul{
+	display: block;
+}
+.topmenu li a{
+	display: block;
+	width: 100px;
+	text-decoration:none;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	color: #10b28c;
+}
+.topmenu li a:hover{
+	border-bottom: 1px solid #10b28c;
+	background: black;
+	color: white;
+}
+.contentmenu img{
+	width: 100%;
+}
+.contentmenu .contentmenu1{
+	float: left;
+	width: 268px;
+	height:400px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px; 
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #000;
+}
+.contentmenu h2{
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+.contentmenu p{
+	font-size: 14px;
+	line-height: 15px;
+}
+.contnetmenu2{
+	font-size: 14px;
+
+}
+.contentmenu2 li{
+	list-style: disc;
+	margin-left: 20px;
+}
+.clearfix{
+	clear: both;
+}
+.lessontitle{
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.lesson{
+	width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lesson th{
+	padding: 10px;
+	border-top: 1px solid #e8e8e7;
+	border-bottom: 1px solid #e8e8e7;
+	background-color: #f5f5f6;
+	text-align: left;
+	font-weight: bold;
+}
+.lesson td{
+	padding: 10px;
+	border-top: 1px solid #e8e8e7;
+	border-bottom: 1px solid #e8e8e7;
+}
+.green{
+	color: #20b790;
+}
+.form{
+	height: 330px;
+	background: linear-gradient(#015942,#048e66);
+}
+.form h2{
+    height: 80px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 35px;
+    color: white;
+}
+.area{
+	float: left;
+	width: 430px;
+	height: 200px;
+	padding-right: 10px;
+    padding-left: 10px;
+}
+.area textarea{
+	width: 420px;
+	height: 180px;
+}
+.input{
+	float: left;
+	width: 430px;
+	height: 200px;
+	padding-right: 10px;
+    padding-left: 10px;
+    position: relative;
+}
+.input label{
+	font-size: 12px;
+	color: white;
+}
+.two{
+	width: 425px;
+	margin-bottom: 5px;
+	font-size: 16px;
+	border-radius: 5px;
+}
+.three{
+	font-size: 16px;
+	color: white;
+	background-color: #00c38c;
+	cursor: pointer;
+	border-radius: 5px;
+	border: none;
+	position: absolute;
+	right: 10px;
+    bottom: 20px;
+}
+.footer{
+	height: 60px;
+	background-color: black;
+}
+.footer h1 a{
+	display: block;
+	float: left;
+	background-image: url(../img/coblogoo.png);
+	height: 60px;
+	width: 259px;
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.footer ul{
+	float: right;
+	font-size: 14px;
+	margin: 5px;
+    line-height: 25px;
+}
+.footer ul li{
+	color: white;
+}
+.footer ul li span{
+	color: red;
+}
+.back {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+

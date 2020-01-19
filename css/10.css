@@ -1,0 +1,78 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.container{
+position: relative;	
+}
+.main{
+	width: 100%;					/* 這邊要寫100%才會滿版 */
+	height: 300px;
+	background: #000;
+	float: right;
+	transition: 0.3s ease;
+}
+.header{
+	height: 50px;
+	background: red;
+}
+.aside{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 270px;
+	height: 300px;
+	background: yellow;
+	overflow: hidden;
+	transform: translateX(-270px);		/* 此為CSS3的語法，X表示X軸，負值則讓他顯示的位置在X軸最左邊，超出瀏覽器變成隱藏 */
+}
+.open .main{							/* 重點在最後兩個transform設定 */
+	transform: translateX(270px);		/* 原本預設是沒有open，所以只會跑main的樣式，但在body加入open後樣式就成立了 */
+}										
+.open .aside{ 							/* aside由X軸負值變成0後就會出現在瀏覽器左邊，main則在X軸上往右移動270px */
+	transform: translateX(0px);			
+}
